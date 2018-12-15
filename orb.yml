@@ -1,0 +1,14 @@
+version: 2.1
+description: hello orbs
+
+commands:
+  hello:
+    description: greeting hello
+    parameters:
+      username:
+        type: string
+        description: a user name
+    steps:
+      - run:
+          name: hello world
+          command: "echo 'hello orbs, << parameters.username >>！'"
