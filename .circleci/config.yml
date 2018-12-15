@@ -1,6 +1,6 @@
 version: 2.1
 orbs:
-  hello-command: yutagoto/hello-world@dev:first
+  hello-command: yutagoto/hello-world@0.0.1
 
 jobs:
   build:
@@ -10,7 +10,6 @@ jobs:
     - run: "echo 'testing building...'"
     - hello-command/hello:
         username: ".Gotch"
-
 
 workflows:
   main:
